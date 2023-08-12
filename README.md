@@ -1,4 +1,4 @@
-Install Oh my Posh!
+# Install Oh my Posh!
 
 ```
 1. install terminal and powershell from MS store
@@ -28,18 +28,18 @@ Install Oh my Posh!
 
 9. (Optional) change oh my posh theme. https://ohmyposh.dev/docs/themes. Run shell: Get-PoshThemes
 
-10. (Optional) Open the $PROFILE file: notepad $PROFILE. Then replace the content with: oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\catppuccin.omp.json" | Invoke-Expression. you can select the theme you want just replace catppuccin for other name and save it or use theme.json, restart.
+10. (Optional) Open the $PROFILE file: "notepad $PROFILE". Then replace the content with: oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\catppuccin.omp.json" | Invoke-Expression. you can select the theme you want just replace catppuccin for other name and save it or use theme.json, restart.
 
 11. Open shell settings or press "Ctrl + ," then on Startup replace default shell with PowerShell and save.
 
 ```
 
-Install icons for folders on PowerShell.
+## Install icons for folders on PowerShell.
 
 ```
 1. We will use this repo https://github.com/devblackops/Terminal-Icons. Run: Install-Module -Name Terminal-Icons -Repository PSGallery and press Y.
 
-2. Open $PROFILE settings. notepad $PROFILE and paste at the end: Import-Module -Name Terminal-Icons and save.
+2. Open $PROFILE settings. "notepad $PROFILE" and paste at the end (new line): "Import-Module -Name Terminal-Icons" and save.
 
 3. Run: ls. and see the icons!
 
@@ -57,4 +57,14 @@ Use terminal on vscode
 
 3. Restart vscode
 
+```
+
+### Enable git autocomplete
+
+```
+1. run: PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
+
+2. Open $PROFILE settings. "notepad $PROFILE" and paste at the end (new line): "Import-Module posh-git" and save
+
+3. Restart
 ```
